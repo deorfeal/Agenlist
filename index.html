@@ -15,55 +15,56 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
-<body>
-
+<body>    
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <a class="header__logo logo" href="#">
                     <img class="logo-img" src="images/logo.svg" alt="logo">
                 </a>
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
-                                home
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
-                                find agents
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
-                                our locations
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
-                                read reviews
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
-                                contact
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <a class="header__link btn btn--green" href="#">
-                    <span>
-                        get started
-                    </span>
-                    <span>
-                        <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.52252 4.55715L12.3008 4.60366M12.3008 4.60366L8.97077 1.12478M12.3008 4.60366L8.94088 8.05368"
-                                stroke="#D617AA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </span>
-                </a>
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    home
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    find agents
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    our locations
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    read reviews
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="header__link btn btn--green" href="#">
+                        <span>
+                            get started
+                        </span>
+                        <span>
+                            <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.52252 4.55715L12.3008 4.60366M12.3008 4.60366L8.97077 1.12478M12.3008 4.60366L8.94088 8.05368"
+                                    stroke="#D617AA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
                 <button class="header__burger burger">
                     <span></span>
                     <span></span>
@@ -411,8 +412,8 @@
                                     to marketing.
                                 </h2>
                             </li>
-                            <li class="catalog-content__item catalog-content__item--active">
-                                <button class="catalog-content__button">
+                            <li class="catalog-content__item">
+                                <button class="catalog-content__button catalog-content__button--acitve" id="0">
                                     <span>
                                         Property Agents
                                     </span>
@@ -428,7 +429,7 @@
                                 </button>
                             </li>
                             <li class="catalog-content__item">
-                                <button class="catalog-content__button">
+                                <button class="catalog-content__button" id="1">
                                     <span>
                                         Real-Estate
                                     </span>
@@ -444,7 +445,7 @@
                                 </button>
                             </li>
                             <li class="catalog-content__item">
-                                <button class="catalog-content__button">
+                                <button class="catalog-content__button" id="2">
                                     <span>
                                         Buy Sell property
                                     </span>
@@ -874,61 +875,119 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="advantages__swiper advantages-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="advantages-swiper__slide advantages-slide swiper-slide">
+                                    <div class="advantages-slide__img advantages-slide__img--purple">
+                                        <img class="advantages-slide__img-image" src="images/advantages-img-1.png"
+                                            alt="img">
+                                    </div>
+                                    <div class="advantages-slide__box">
+                                        <p class="advantages-slide__box-text">
+                                            Meg Berms
+                                            <span>
+                                                · 23min
+                                            </span>
+                                        </p>
+                                        <p class="advantages-slide__box-subtext">
+                                            Far far away, behind the word tains,
+                                            far from the countries
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="advantages-swiper__slide advantages-slide swiper-slide">
+                                    <div class="advantages-slide__box">
+                                        <p class="advantages-slide__box-text">
+                                            Jorge patison
+                                            <span>
+                                                · 45min
+                                            </span>
+                                        </p>
+                                        <p class="advantages-slide__box-subtext">
+                                            There live the blind texts separa ted
+                                            they live in bookmarks
+                                        </p>
+                                    </div>
+                                    <div class="advantages-slide__img advantages-slide__img--red">
+                                        <img class="advantages-slide__img-image" src="images/advantages-img-2.png"
+                                            alt="img">
+                                    </div>
+                                </div>
+                                <div class="advantages-swiper__slide advantages-slide swiper-slide">
+                                    <div class="advantages-slide__img advantages-slide__img--green">
+                                        <img class="advantages-slide__img-image" src="images/advantages-img-3.png"
+                                            alt="img">
+                                    </div>
+                                    <div class="advantages-slide__box">
+                                        <p class="advantages-slide__box-text">
+                                            Jone coopeer
+                                            <span>
+                                                · 13min
+                                            </span>
+                                        </p>
+                                        <p class="advantages-slide__box-subtext">
+                                            At the coast of the Semantics there
+                                            language ocean.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="advantages-swiper__slide advantages-slide swiper-slide">
+                                    <div class="advantages-slide__box">
+                                        <p class="advantages-slide__box-text">
+                                            Meg Berms
+                                            <span>
+                                                · 23min
+                                            </span>
+                                        </p>
+                                        <p class="advantages-slide__box-subtext">
+                                            Far far away, behind the word tains,
+                                            far from the countries
+                                        </p>
+                                    </div>
+                                    <div class="advantages-slide__img advantages-slide__img--purple">
+                                        <img class="advantages-slide__img-image" src="images/advantages-img-1.png"
+                                            alt="img">
+                                    </div>
+                                </div>
+                                <div class="advantages-swiper__slide advantages-slide swiper-slide">
+                                    <div class="advantages-slide__img advantages-slide__img--red">
+                                        <img class="advantages-slide__img-image" src="images/advantages-img-2.png"
+                                            alt="img">
+                                    </div>
+                                    <div class="advantages-slide__box">
+                                        <p class="advantages-slide__box-text">
+                                            Jorge patison
+                                            <span>
+                                                · 45min
+                                            </span>
+                                        </p>
+                                        <p class="advantages-slide__box-subtext">
+                                            There live the blind texts separa ted
+                                            they live in bookmarks
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="advantages-swiper__slide advantages-slide swiper-slide">
+                                    <div class="advantages-slide__box">
+                                        <p class="advantages-slide__box-text">
+                                            Jone coopeer
+                                            <span>
+                                                · 13min
+                                            </span>
+                                        </p>
+                                        <p class="advantages-slide__box-subtext">
+                                            At the coast of the Semantics there
+                                            language ocean.
+                                        </p>
+                                    </div>
+                                    <div class="advantages-slide__img advantages-slide__img--green">
+                                        <img class="advantages-slide__img-image" src="images/advantages-img-3.png"
+                                            alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="advantages__content advantages-content">
-                            <div class="advantages-content__item advantages-content-item">
-                                <div class="advantages-content-item__img">
-                                    <img class="advantages-content-item__img-image" src="images/advantages-img-1.png"
-                                        alt="img">
-                                </div>
-                                <div class="advantages-content-item__box">
-                                    <p class="advantages-content-item__box-text">
-                                        Meg Berms
-                                        <span>
-                                            · 23min
-                                        </span>
-                                    </p>
-                                    <p class="advantages-content-item__box-subtext">
-                                        Far far away, behind the word tains,
-                                        far from the countries
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="advantages-content__item advantages-content-item">
-                                <div class="advantages-content-item__box">
-                                    <p class="advantages-content-item__box-text">
-                                        Jorge patison
-                                        <span>
-                                            · 45min
-                                        </span>
-                                    </p>
-                                    <p class="advantages-content-item__box-subtext">
-                                        There live the blind texts separa ted
-                                        they live in bookmarks
-                                    </p>
-                                </div>
-                                <div class="advantages-content-item__img">
-                                    <img class="advantages-content-item__img-image" src="images/advantages-img-2.png"
-                                        alt="img">
-                                </div>
-                            </div>
-                            <div class="advantages-content__item advantages-content-item">
-                                <div class="advantages-content-item__img">
-                                    <img class="advantages-content-item__img-image" src="images/advantages-img-3.png"
-                                        alt="img">
-                                </div>
-                                <div class="advantages-content-item__box">
-                                    <p class="advantages-content-item__box-text">
-                                        Jone coopeer
-                                        <span>
-                                            · 13min
-                                        </span>
-                                    </p>
-                                    <p class="advantages-content-item__box-subtext">
-                                        At the coast of the Semantics there
-                                        language ocean.
-                                    </p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -1097,7 +1156,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
             <section class="main__team team">
                 <div class="container">
                     <div class="team__heading heading">
@@ -1583,7 +1642,7 @@
                     <div class="featured__inner">
                         <a class="featured__item featured-item" href="#">
                             <div class="featured-item__icon">
-                                <!--  -->
+
                                 <span>
 
                                 </span>
@@ -1594,7 +1653,7 @@
                         </a>
                         <a class="featured__item featured-item" href="#">
                             <div class="featured-item__icon">
-                                <!--  -->
+
                                 <span>
 
                                 </span>
@@ -1605,7 +1664,7 @@
                         </a>
                         <a class="featured__item featured-item" href="#">
                             <div class="featured-item__icon">
-                                <!--  -->
+
                                 <span>
                                 </span>
                             </div>
@@ -1615,7 +1674,7 @@
                         </a>
                         <a class="featured__item featured-item" href="#">
                             <div class="featured-item__icon">
-                                <!--  -->
+
                                 <span>
 
                                 </span>
@@ -1626,7 +1685,7 @@
                         </a>
                         <a class="featured__item featured-item" href="#">
                             <div class="featured-item__icon">
-                                <!--  -->
+
                                 <span>
 
                                 </span>
@@ -1637,7 +1696,7 @@
                         </a>
                         <a class="featured__item featured-item" href="#">
                             <div class="featured-item__icon">
-                                <!--  -->
+
                                 <span>
 
                                 </span>
@@ -1648,7 +1707,7 @@
                         </a>
                         <a class="featured__item featured-item" href="#">
                             <div class="featured-item__icon">
-                                <!--  -->
+
                                 <span>
 
                                 </span>
@@ -1659,7 +1718,7 @@
                         </a>
                         <a class="featured__item featured-item" href="#">
                             <div class="featured-item__icon">
-                                <!--  -->
+
                                 <span>
 
                                 </span>
@@ -1670,7 +1729,7 @@
                         </a>
                         <a class="featured__item featured-item" href="#">
                             <div class="featured-item__icon">
-                                <!--  -->
+
                                 <span>
 
                                 </span>
